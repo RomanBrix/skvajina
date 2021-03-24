@@ -1,0 +1,124 @@
+{
+  "name": "",
+  "css_prefix_text": "icon-",
+  "css_use_suffix": false,
+  "hinting": true,
+  "units_per_em": 1000,
+  "ascent": 850,
+  "glyphs": [
+    {
+      "uid": "9f7e588c66cfd6891f6f507cf6f6596b",
+      "css": "phone",
+      "code": 59398,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "3e1c9aac91dc062dc1af383d43f58ac5",
+      "css": "tty",
+      "code": 61924,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "7f3d8ff1d5f6ee019f0c00ed7a86caec",
+      "css": "truck",
+      "code": 59392,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "7e2642b7a42728c7d9ce5558c3f8461b",
+      "css": "chat",
+      "code": 59393,
+      "src": "iconic"
+    },
+    {
+      "uid": "ccf71c505b173c61a2e4e8c8cb907dfa",
+      "css": "chat-alt",
+      "code": 59394,
+      "src": "typicons"
+    },
+    {
+      "uid": "40c9502d45c736a0a6ec45e6fbc28656",
+      "css": "ok-outline",
+      "code": 59395,
+      "src": "typicons"
+    },
+    {
+      "uid": "ad33e708f4d2e25c5056c931da1528d6",
+      "css": "ok-circled2",
+      "code": 59396,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "43ab845088317bd348dee1d975700c48",
+      "css": "ok-circled",
+      "code": 59397,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "12f4ece88e46abd864e40b35e05b11cd",
+      "css": "ok",
+      "code": 59399,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "1400d5103edd2fa6d2d61688fee79a5a",
+      "css": "ok-squared",
+      "code": 61770,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "5e1ef647438e2204c15197c6efc4151e",
+      "css": "ok-circled-1",
+      "code": 61549,
+      "src": "mfglabs"
+    },
+    {
+      "uid": "157f2382d2c608c41d984c693174c83b",
+      "css": "ok-circle",
+      "code": 59400,
+      "src": "websymbols"
+    },
+    {
+      "uid": "64abb7c56aefca89046bb69f7251d2e2",
+      "css": "calendar",
+      "code": 59401,
+      "src": "elusive"
+    },
+    {
+      "uid": "7689d722f0cb41f16f74b8149de5f71a",
+      "css": "calendar-circled",
+      "code": 59402,
+      "src": "elusive"
+    },
+    {
+      "uid": "43e4647c57186b5e06874621b5e665be",
+      "css": "calendar-1",
+      "code": 59403,
+      "src": "linecons"
+    },
+    {
+      "uid": "bcdc294bb787b15203b82f2be8096548",
+      "css": "star",
+      "code": 59404,
+      "src": "typicons"
+    },
+    {
+      "uid": "vyuzsm6wijlfwtjo4ifkoblfmsepk6g8",
+      "css": "star-filled",
+      "code": 59405,
+      "src": "typicons"
+    },
+    {
+      "uid": "0c71ab36fb4e0923e3cf8d6beabe1851",
+      "css": "check-outline",
+      "code": 59406,
+      "src": "typicons"
+    },
+    {
+      "uid": "27531040afb54140f4d449321c9cec3a",
+      "css": "check",
+      "code": 59407,
+      "src": "typicons"
+    }
+  ]
+}
