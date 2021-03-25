@@ -1,0 +1,30 @@
+.about{
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  .content-box{
+    height: auto;
+    justify-content: space-between;
+    .left{
+      width: 48%;
+      h2{
+        display: inline-block;
+        font-size: 33px;
+        color: #2a2a2a;
+        margin-bottom: 15px;
+      }
+      p{
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 1.6;
+        margin-bottom: 15px;
+      }
+    }
+    .right{
+      width: 40%;
+      img{
+        width: 100%;
+      }
+    }
+  }
+}
