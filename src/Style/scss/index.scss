@@ -48,4 +48,18 @@ html, body {
    text-transform: uppercase;
    font-weight: 700;
  }
+
+ @media  (max-width:500px) {
+   .content-box{
+     width: 100%;
+     max-width: 500px;
+     padding: 15px 25px;
+
+   }
+   .btn{
+     width: 200px;
+     padding: 10px 0;
+
+   }
+ }
 }

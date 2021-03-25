@@ -64,3 +64,30 @@
     }
   }
 }
+@media  (max-width:500px) {
+  .faq{
+    .content-box{
+      h2{
+        line-height: 36px;
+      }
+      .questions{
+        flex-direction: column;
+        .question{
+          width: 100%;
+          .title{
+            i{
+            }
+          }
+        }
+      }
+      .btns{
+        flex-direction: column;
+        .btn_call{
+          margin-bottom: 15px;
+        }
+        .btn_re_call{
+        }
+      }
+    }
+  }
+}

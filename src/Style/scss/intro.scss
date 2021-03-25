@@ -140,9 +140,53 @@
         }
       }
     }
-
-
   }
+}
 
+@media  (max-width:500px) {
+  .intro{
+    height: 65vh;
+    .bg{
+      height: 65vh;
+    }
+    .content-box{
 
+      .menu{
+        margin-bottom: 25px;
+        flex-direction: column;
+        .logo{
+        span{}
+        }
+        .tel{
+          a{
+            i{
+              &:after{}
+            }
+          }
+        }
+      }
+      .text{
+        h1{
+          font-size: 26px;
+          span{  }
+        }
+        h2{
+          font-size: 19px;
+          margin-top: 10px;
+          span{
+
+          }
+        }
+        .btns{
+          flex-direction: column;
+          margin-top: 15px;
+          .btn_call{
+            margin-bottom: 15px;
+
+          }
+          .btn_re_call{}
+        }
+      }
+    }
+  }
 }

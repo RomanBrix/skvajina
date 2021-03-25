@@ -82,3 +82,35 @@
     }
   }
 }
+@media  (max-width:500px) {
+  .work{
+    height: auto;
+    .bg{
+      height: 100%;
+
+      &:after{
+      }
+    }
+    .content-box{
+      flex-direction: column;
+      align-items: center;
+      h2{
+      }
+      .blox{
+        flex-direction: column;
+
+        .block{
+          width: 100%;
+
+          i{
+          }
+          p{
+          }
+        }
+      }
+    }
+    .btn_call{
+      margin-top: 20px;
+    }
+  }
+}

@@ -76,5 +76,41 @@
       }
     }
   }
+}
+@media  (max-width:500px) {
+  .text{
+    .content-box{
+      width: 100%;
+      h2{
+      }
+      p{
+      }
+      .list{
+        flex-direction: column;
+        align-items: center;
+        .block{
+          width: 95%;
+          .left{
+            i{
+            }
+          }
+          .right{
+            p{
+            }
+          }
+        }
+      }
+      .btns{
+        flex-direction: column;
+        .btn_call{
+          margin-bottom: 15px;
 
+          &:hover{
+          }
+        }
+        .btn_re_call{
+        }
+      }
+    }
+  }
 }

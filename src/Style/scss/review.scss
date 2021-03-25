@@ -114,3 +114,46 @@
     }
   }
 }
+
+@media  (max-width:500px) {
+  .review{
+    .content-box{
+      h2{
+        line-height: 36px;
+      }
+      .blocks{
+        flex-direction: column;
+        align-items: center;
+        .block{
+          box-sizing: border-box;
+          width: 100%;
+          margin-bottom: 20px;
+          .top{
+            .name{
+            }
+            .stars{
+              i{}
+            }
+          }
+          .title{
+          }
+          .text{
+            p{
+            }
+            span{
+            }
+          }
+
+        }
+      }
+      .btns{
+        flex-direction: column;
+        .btn_call{
+          margin-bottom: 15px;
+        }
+        .btn_re_call{
+        }
+      }
+    }
+  }
+}
