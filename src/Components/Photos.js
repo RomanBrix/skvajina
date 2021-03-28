@@ -28,8 +28,8 @@ class Photos extends React.Component {
             </div>
           </div>
           <div className="btns">
-            <div className="btn btn_call">Позвонить</div>
-            <div className="btn btn_re_call">Заказать звонок</div>
+            <div className="btn btn_call" onClick={()=>{this.props.clickCall();}}>Позвонить</div>
+            <div className="btn btn_re_call"onClick={()=>{this.props.openLayer()}}>Заказать звонок</div>
           </div>
         </div>
       </div>

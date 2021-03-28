@@ -7,26 +7,105 @@ import Review from './Review';
 import Faq from './Faq';
 import Where from './Where';
 import Contact from './Contact';
+import Call from './layers/Call';
 
-import React from 'react'
-import PropTypes from 'prop-types'
+import axios from 'axios';
+import React from 'react';
+import PropTypes from 'prop-types';
 
 class App extends React.Component {
+  constructor(props){
+    super(props);
+
+    this.state = {
+      call_layer: false
+    }
+  }
   render () {
     return(
       <div className="App">
-      <Intro/>
+      {this.state.call_layer ?
+        <Call
+          openLayer={this.openLayer.bind(this)}
+          sendInfo={this.sendInfo.bind(this)}
+          />
+        : ''}
+
+      <Intro
+        clickCall={this.clickCall.bind(this)}
+        openLayer={this.openLayer.bind(this)}
+        sendInfo={this.sendInfo.bind(this)}
+        />
       <About/>
-      <Work/>
-      <Photos/>
-      <Text forText={forText[0]}/>
-      <Review/>
-      <Text forText={forText[1]}/>
-      <Faq/>
+      <Work clickCall={this.clickCall.bind(this)}/>
+      <Photos
+        clickCall={this.clickCall.bind(this)}
+        openLayer={this.openLayer.bind(this)}
+        />
+      <Text forText={forText[0]}
+        clickCall={this.clickCall.bind(this)}
+        openLayer={this.openLayer.bind(this)}
+        />
+      <Review
+        clickCall={this.clickCall.bind(this)}
+        openLayer={this.openLayer.bind(this)}
+        />
+      <Text forText={forText[1]}
+        clickCall={this.clickCall.bind(this)}
+        openLayer={this.openLayer.bind(this)}
+        />
+      <Faq
+        clickCall={this.clickCall.bind(this)}
+        openLayer={this.openLayer.bind(this)}
+        />
       <Where/>
-      <Contact/>
+      <Contact
+
+        openLayer={this.openLayer.bind(this)}
+        sendInfo={this.sendInfo.bind(this)}
+        />
     </div>
   )
+  }
+
+  sendInfo(type, num){
+    let data = {}
+    if(type === 'calling'){
+      data = {
+        name:"Кто-то нажал на кнопку позвонить",
+      }
+    }else{
+      data = {
+        name:"Просит позвонить!",
+        tel: num,
+      }
+    }
+    axios.post('/send.php',data)
+    .then((res)=>{
+      console.log(res);
+      if(res.data ==='ok'){
+        if(type !== 'calling'){
+          alert('Ожидай звонка!');
+        }
+
+      }
+    })
+    .catch((err)=>{
+      console.log(err);
+    })
+  }
+
+  openLayer(){
+    const {call_layer} = this.state;
+    this.setState({
+      call_layer: !call_layer
+    })
+  }
+
+  clickCall(){
+    const btn_call = document.getElementById('callUs');
+    // console.log(btn_call);
+    btn_call.click();
   }
 }
 

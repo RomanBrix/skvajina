@@ -11,8 +11,8 @@ class Faq extends React.Component {
             {this.renderFaq(questions)}
           </div>
           <div className="btns">
-            <div className="btn btn_call">Позвонить</div>
-            <div className="btn btn_re_call">Заказать звонок</div>
+            <div className="btn btn_call"  onClick={()=>{this.props.clickCall();}}>Позвонить</div>
+            <div className="btn btn_re_call" onClick={()=>{this.props.openLayer()}}>Заказать звонок</div>
           </div>
         </div>
       </div>
@@ -20,7 +20,7 @@ class Faq extends React.Component {
   }
   renderFaq(arr){
     return arr.map((item,index)=>{
-      return <div className="question" key="index">
+      return <div className="question" key={index}>
       <div className="title"><i className="icon-star-filled"/>{item.title}</div>
       <div className="answer">{item.answer}</div>
       </div>

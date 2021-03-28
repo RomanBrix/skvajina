@@ -30,7 +30,7 @@ class Work extends React.Component {
               <p>Результат</p>
             </div>
           </div>
-          <div className="btn btn_call">Позвонить</div>
+          <div className="btn btn_call" onClick={()=>{this.props.clickCall();}}>Позвонить</div>
         </div>
       </div>
     )

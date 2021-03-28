@@ -15,8 +15,8 @@ class Text extends React.Component {
           </div>
           <p>{forText.p_two}</p>
           <div className="btns">
-            <div className="btn btn_call">Позвонить</div>
-            <div className="btn btn_re_call">Заказать звонок</div>
+            <div className="btn btn_call" onClick={()=>{this.props.clickCall();}}>Позвонить</div>
+            <div className="btn btn_re_call" onClick={()=>{this.props.openLayer()}}>Заказать звонок</div>
           </div>
         </div>
       </div>
@@ -25,7 +25,7 @@ class Text extends React.Component {
 
   renderList(arr){
     return arr.map((item,index)=>{
-      return <div className="block" key={index}>
+      return <div className="block" key={index* Math.random()}>
         <div className="left">
           <i className='icon-ok-circle'/>
         </div>
