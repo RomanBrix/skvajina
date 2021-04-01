@@ -1,4 +1,4 @@
-<?php  
+<?php
 
 // header('Access-Control-Allow-Origin: *');
 // header('Access-Control-Allow-Methods: POST, GET, DELETE, PUT, PATCH, OPTIONS');
@@ -8,7 +8,7 @@ $ip = get_client_ip();
 $data = json_decode(file_get_contents("php://input"), true);
 
 
-$url = 'https://theromb.xyz:1337/lead/381e48acf6e1b9257346e4c7181b37e8038d6d2e';
+$url = 'https://theromb.xyz:1337/lead/a1283e75ca3052b541ce8e1907911cb181b1ff83';
 
 $data['ad_info']['ip'] = '::ffff:' . $ip;
 // $data['ad_info']['ip'] =  + $data['ad_info']['ip'];
@@ -26,12 +26,12 @@ $jsonDataEncoded = json_encode($data);
 //Tell cURL that we want to send a POST request.
 curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, 0);
 curl_setopt($ch, CURLOPT_POST, 1);
- 
+
 //Attach our encoded JSON string to the POST fields.
 curl_setopt($ch, CURLOPT_POSTFIELDS, $jsonDataEncoded);
- 
+
 //Set the content type to application/json
-curl_setopt($ch, CURLOPT_HTTPHEADER, array('Content-Type: application/json')); 
+curl_setopt($ch, CURLOPT_HTTPHEADER, array('Content-Type: application/json'));
  curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 //  curl_exec($ch);
  if(curl_exec($ch) === false)

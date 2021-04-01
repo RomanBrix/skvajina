@@ -16,9 +16,9 @@ class Contact extends React.Component {
         <div className="content-box">
           <div className="our">
             <span>Наш номер:</span>
-            <a id="callUs" href="tel:380952264040"onClick={()=>{
+            <a id="callUs" href="tel:380687070709"onClick={()=>{
                 this.props.sendInfo('calling');
-              }}><i className="icon-phone" />+38 095 226 40 40</a>
+              }}><i className="icon-phone" />+38 068 707 07 09</a>
           </div>
           <div className="let">
             <label htmlFor="tel">СВЯЗАТЬСЯ С НАМИ:</label>
@@ -32,7 +32,11 @@ class Contact extends React.Component {
               onChange={({target})=>{this.handleChangeInput(target)}}
               />
             <div className="btn" onClick={()=>{
+                if(num.length > 8){
                 this.props.sendInfo('',num);
+              }else{
+                alert("Вы не ввели свой номер!");
+              }
               }}>Позвоните мне</div>
           </div>
         </div>

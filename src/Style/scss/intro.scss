@@ -35,6 +35,12 @@
       font-family: 'Raleway', sans-serif;
         font-weight: 900;
       color: #fff;
+      position: relative;
+      img{
+        top: -50px;
+        position: absolute;
+        width: 110px;
+      }
       span{
           color: #007eff;
       }

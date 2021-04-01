@@ -87,6 +87,7 @@ class App extends React.Component {
         if(type !== 'calling'){
           alert('Ожидай звонка!');
         }
+        // document.location.replace('/thank.html');
 
       }
     })

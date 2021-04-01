@@ -22,10 +22,12 @@
       padding: 0;
       display: flex;
       flex-direction: row;
+      align-items: center;
+      justify-content: center;
       flex-wrap: wrap;
       li{
         margin-right: 10px;
-        width: 24%;
+        flex: 30%;
         box-sizing: border-box;
         padding-left: 7px;
         margin-bottom: 15px;
