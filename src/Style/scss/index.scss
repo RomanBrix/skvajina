@@ -1,66 +1,101 @@
 @import "../FontIcons/css/fontello.css";
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;800;900&display=swap');
+// @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;800;900&display=swap");
+// @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@400;500;700;900&family=Unbounded:wght@200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Raleway:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@400;500;700;900&family=Unbounded:wght@200;300;400;500;600;700;800;900&display=swap");
 
-html, body {
-  margin: 0;
-  padding: 0;
-  font-family: 'Raleway', sans-serif;
-  .content-box{
-    height: 100vh;
-    width: 100%;
-    position: relative;
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-    flex-wrap:wrap;
-    box-sizing: border-box;
-    max-width: 1152px;
-    padding: 50px 0;
-   }
- @import "./intro";
- @import "./about";
- @import "./work";
- @import "./photos";
- @import "./text";
- @import "./review";
- @import "./faq";
- @import "./where";
- @import "./contact";
- @import "./call";
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Raleway", sans-serif;
+    .content-box {
+        // min-height: 100vh;
+        width: 100%;
+        position: relative;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        max-width: 1400px;
+        padding: 50px 0;
+    }
+    // @import "./intro";
+    @import "./newIntro";
+    @import "./newAbout.scss";
+    // @import "./about";
+    @import "./work";
+    @import "./photos";
+    @import "./text";
+    @import "./review";
+    @import "./faq";
+    @import "./where";
+    @import "./contact";
+    @import "./call";
 
- input::-webkit-outer-spin-button,
- input::-webkit-inner-spin-button {
-   -webkit-appearance: none;
-   margin: 0;
- }
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
 
- .btn{
-   width: 250px;
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   border: 1px solid #fff;
-   box-sizing: border-box;
-   padding: 15px 0;
-   border-radius: 4px;
-   cursor: pointer;
-   transition: .25s;
-   background: rgba(255,255,255,.4);
-   text-transform: uppercase;
-   font-weight: 700;
- }
+    .btn {
+        min-width: 130px;
+        // max-width: ;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        // border: 1px solid #fff;
+        box-sizing: border-box;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: 0.25s;
+        background: rgba(255, 255, 255, 0.4);
+        // text-transform: uppercase;
+        font-weight: 700;
 
- @media  (max-width:500px) {
-   .content-box{
-     width: 100%;
-     max-width: 500px;
-     padding: 15px 25px;
+        padding: 15px 20px;
+        font-family: "Raleway";
+        border-radius: 30px;
+        background: #0053d0;
+        color: #fff;
+        text-align: center;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 21px;
+        border: 1px solid transparent;
 
-   }
-   .btn{
-     width: 200px;
-     padding: 10px 0;
+        &:hover {
+            background: rgba($color: #0053d0, $alpha: 0.75);
+        }
+        &.btn-second {
+            background: #eee;
+            color: #2c2c2c;
+            &:hover {
+                background: rgba($color: #eee, $alpha: 0.75);
+            }
+        }
+        &.btn-third {
+            background: #fff;
+            border: 1px solid #0053d0;
+            color: #2c2c2c;
+            &:hover {
+                color: #fff;
+                background: rgba($color: #0053d0, $alpha: 0.75);
+            }
+        }
+    }
 
-   }
- }
+    @media (max-width: 500px) {
+        .content-box {
+            width: 100%;
+            max-width: 500px;
+            padding: 15px 25px;
+        }
+        .btn {
+            width: 200px;
+            padding: 10px 0;
+        }
+    }
 }

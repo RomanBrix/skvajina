@@ -1,0 +1,90 @@
+.about {
+    background: #0053d0;
+    .content-box {
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        color: #fff;
+        @media (max-width: 700px) {
+            flex-direction: column;
+        }
+
+        .left {
+            max-width: 930px;
+            @media (max-width: 700px) {
+                margin-bottom: 75px;
+            }
+            h1 {
+                font-size: 36px;
+                font-style: normal;
+                font-weight: 900;
+                line-height: 110%; /* 39.6px */
+                text-transform: uppercase;
+                padding: 0;
+                margin: 0;
+                margin-bottom: 16px;
+            }
+            p {
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 140%; /* 25.2px */
+                letter-spacing: 0.72px;
+                padding: 0;
+                margin: 0;
+                margin-bottom: 16px;
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+        .right {
+            @media (max-width: 700px) {
+                margin-bottom: 50px;
+            }
+            .logo {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                // background: #fff;
+                position: relative;
+                &::before {
+                    content: "";
+                    position: absolute;
+                    aspect-ratio: 1/1;
+                    width: 300px;
+                    background: #fff;
+                    border-radius: 50%;
+                    @media (max-width: 700px) {
+                        width: 220px;
+                    }
+                }
+                svg {
+                    position: relative;
+                    width: 165px;
+                    height: auto;
+                    margin-bottom: 8px;
+                    @media (max-width: 700px) {
+                        width: 120px;
+                    }
+                }
+                span {
+                    position: relative;
+                    color: #007eff;
+                    font-family: "Unbounded";
+                    font-size: 32px;
+                    font-style: normal;
+                    font-weight: 900;
+                    line-height: 110%; /* 35.2px */
+                    text-transform: uppercase;
+                    @media (max-width: 700px) {
+                        font-size: 24px;
+                    }
+                }
+            }
+        }
+    }
+}
